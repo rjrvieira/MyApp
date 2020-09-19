@@ -10,7 +10,11 @@
 		1129CBC824AE36750077E121 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129CBC724AE36750077E121 /* ImagePicker.swift */; };
 		1158E12D24B60C0200C713FE /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158E12C24B60C0200C713FE /* ActivityIndicator.swift */; };
 		1158E12F24B60E9400C713FE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158E12E24B60E9400C713FE /* LoadingView.swift */; };
-		11BD936524AB4138002F9281 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD936424AB4138002F9281 /* DatabaseHelper.swift */; };
+		11591B4F24C34E1700B5AD98 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11591B4E24C34E1700B5AD98 /* Post.swift */; };
+		11591B5124C4555600B5AD98 /* SwiftUIList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11591B5024C4555600B5AD98 /* SwiftUIList.swift */; };
+		11591B5524C4565500B5AD98 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11591B5424C4565500B5AD98 /* DataModel.swift */; };
+		11591B5724C59D8000B5AD98 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11591B5624C59D8000B5AD98 /* PostView.swift */; };
+		11BAE92924F7E7A100505F8E /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAE92824F7E7A100505F8E /* UserDB.swift */; };
 		11BD936924AB8D2A002F9281 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD936824AB8D2A002F9281 /* HomeView.swift */; };
 		11CC8FC924A622B400F74656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC8FC824A622B400F74656 /* AppDelegate.swift */; };
 		11CC8FCB24A622B400F74656 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC8FCA24A622B400F74656 /* SceneDelegate.swift */; };
@@ -21,12 +25,12 @@
 		11CC8FDD24A79CF000F74656 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC8FDC24A79CF000F74656 /* RegisterView.swift */; };
 		11D2E8F724B8EC9600D5DCA6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E8F624B8EC9600D5DCA6 /* ImageLoader.swift */; };
 		11D2E8F924B8F06B00D5DCA6 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E8F824B8F06B00D5DCA6 /* HomeScreenView.swift */; };
-		11D2E8FB24B8F07C00D5DCA6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E8FA24B8F07C00D5DCA6 /* ProfileView.swift */; };
+		11D2E8FB24B8F07C00D5DCA6 /* OwnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E8FA24B8F07C00D5DCA6 /* OwnProfileView.swift */; };
 		11D2E8FD24B90BD700D5DCA6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E8FC24B90BD700D5DCA6 /* User.swift */; };
-		11D2E8FF24B91D2600D5DCA6 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E8FE24B91D2600D5DCA6 /* PostView.swift */; };
 		11D2E90124B9BFF500D5DCA6 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E90024B9BFF500D5DCA6 /* EditProfileView.swift */; };
 		11D2E90324BB29D800D5DCA6 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E90224BB29D800D5DCA6 /* SearchView.swift */; };
 		11D2E90524BBC44400D5DCA6 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2E90424BBC44300D5DCA6 /* CreatePostView.swift */; };
+		11F9BFA024F6C9C100496A79 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F9BF9F24F6C9C100496A79 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,7 +50,11 @@
 		1129CBC724AE36750077E121 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1158E12C24B60C0200C713FE /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		1158E12E24B60E9400C713FE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		11BD936424AB4138002F9281 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		11591B4E24C34E1700B5AD98 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		11591B5024C4555600B5AD98 /* SwiftUIList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIList.swift; sourceTree = "<group>"; };
+		11591B5424C4565500B5AD98 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		11591B5624C59D8000B5AD98 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		11BAE92824F7E7A100505F8E /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		11BD936824AB8D2A002F9281 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		11CC8FC524A622B400F74656 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11CC8FC824A622B400F74656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,12 +67,12 @@
 		11CC8FDC24A79CF000F74656 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		11D2E8F624B8EC9600D5DCA6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		11D2E8F824B8F06B00D5DCA6 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
-		11D2E8FA24B8F07C00D5DCA6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		11D2E8FA24B8F07C00D5DCA6 /* OwnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnProfileView.swift; sourceTree = "<group>"; };
 		11D2E8FC24B90BD700D5DCA6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		11D2E8FE24B91D2600D5DCA6 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		11D2E90024B9BFF500D5DCA6 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		11D2E90224BB29D800D5DCA6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		11D2E90424BBC44300D5DCA6 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		11F9BF9F24F6C9C100496A79 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +121,6 @@
 				11CC8FD624A622BA00F74656 /* Info.plist */,
 				11CC8FD024A622BA00F74656 /* Preview Content */,
 				11CC8FDC24A79CF000F74656 /* RegisterView.swift */,
-				11BD936424AB4138002F9281 /* DatabaseHelper.swift */,
 				11BD936824AB8D2A002F9281 /* HomeView.swift */,
 				1129CBC724AE36750077E121 /* ImagePicker.swift */,
 				1158E12C24B60C0200C713FE /* ActivityIndicator.swift */,
@@ -121,11 +128,16 @@
 				11D2E8F624B8EC9600D5DCA6 /* ImageLoader.swift */,
 				11D2E8F824B8F06B00D5DCA6 /* HomeScreenView.swift */,
 				11D2E90224BB29D800D5DCA6 /* SearchView.swift */,
-				11D2E8FA24B8F07C00D5DCA6 /* ProfileView.swift */,
-				11D2E8FC24B90BD700D5DCA6 /* User.swift */,
-				11D2E8FE24B91D2600D5DCA6 /* PostView.swift */,
+				11F9BF9F24F6C9C100496A79 /* ProfileView.swift */,
+				11D2E8FA24B8F07C00D5DCA6 /* OwnProfileView.swift */,
 				11D2E90024B9BFF500D5DCA6 /* EditProfileView.swift */,
 				11D2E90424BBC44300D5DCA6 /* CreatePostView.swift */,
+				11D2E8FC24B90BD700D5DCA6 /* User.swift */,
+				11591B4E24C34E1700B5AD98 /* Post.swift */,
+				11591B5024C4555600B5AD98 /* SwiftUIList.swift */,
+				11591B5424C4565500B5AD98 /* DataModel.swift */,
+				11591B5624C59D8000B5AD98 /* PostView.swift */,
+				11BAE92824F7E7A100505F8E /* UserDB.swift */,
 			);
 			path = MyApp;
 			sourceTree = "<group>";
@@ -211,18 +223,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D2E90124B9BFF500D5DCA6 /* EditProfileView.swift in Sources */,
-				11D2E8FF24B91D2600D5DCA6 /* PostView.swift in Sources */,
 				11D2E8FD24B90BD700D5DCA6 /* User.swift in Sources */,
 				11CC8FC924A622B400F74656 /* AppDelegate.swift in Sources */,
-				11BD936524AB4138002F9281 /* DatabaseHelper.swift in Sources */,
+				11BAE92924F7E7A100505F8E /* UserDB.swift in Sources */,
+				11591B4F24C34E1700B5AD98 /* Post.swift in Sources */,
+				11591B5524C4565500B5AD98 /* DataModel.swift in Sources */,
 				11D2E8F724B8EC9600D5DCA6 /* ImageLoader.swift in Sources */,
 				11CC8FDD24A79CF000F74656 /* RegisterView.swift in Sources */,
-				11D2E8FB24B8F07C00D5DCA6 /* ProfileView.swift in Sources */,
+				11D2E8FB24B8F07C00D5DCA6 /* OwnProfileView.swift in Sources */,
 				1129CBC824AE36750077E121 /* ImagePicker.swift in Sources */,
+				11591B5724C59D8000B5AD98 /* PostView.swift in Sources */,
 				1158E12D24B60C0200C713FE /* ActivityIndicator.swift in Sources */,
 				11BD936924AB8D2A002F9281 /* HomeView.swift in Sources */,
+				11F9BFA024F6C9C100496A79 /* ProfileView.swift in Sources */,
 				11D2E8F924B8F06B00D5DCA6 /* HomeScreenView.swift in Sources */,
 				11D2E90324BB29D800D5DCA6 /* SearchView.swift in Sources */,
+				11591B5124C4555600B5AD98 /* SwiftUIList.swift in Sources */,
 				11CC8FCB24A622B400F74656 /* SceneDelegate.swift in Sources */,
 				11D2E90524BBC44400D5DCA6 /* CreatePostView.swift in Sources */,
 				11CC8FCD24A622B400F74656 /* ContentView.swift in Sources */,

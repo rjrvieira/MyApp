@@ -57,8 +57,8 @@ struct LoginView: View {
     
     @State var buttonDisabled = true
     
-    @ObservedObject var imageLoader = ImageLoader(urlString: "http://vieiraapp.000webhostapp.com/userPhotos/Qwert.jpeg")
-    @State var image:UIImage = UIImage()
+    /*@ObservedObject var imageLoader = ImageLoader(urlString: "http://vieiraapp.000webhostapp.com/userPhotos/Qwert.jpeg")
+    @State var image: UIImage = UIImage()*/
     
     var body: some View {
         
@@ -83,13 +83,13 @@ struct LoginView: View {
                 Spacer()
                 
                 
-                Image(uiImage: image)
+                /*Image(uiImage: image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width:100, height:100)
                     .onReceive(imageLoader.didChange) { data in
                     self.image = UIImage(data: data) ?? UIImage()
-                }
+                }*/
                 
                 TextField("Username", text: bindingUsername)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -138,12 +138,14 @@ struct LoginButton: View {
             
             self.login() {
                 dataString, error in
-                print("--> \(String(describing: dataString))")
-                if dataString == "Successfully logged in" {
+                let parts = dataString.components(separatedBy: "|")
+                if parts[0] == "Successfully logged in" {
                     let defaults = UserDefaults.standard
                     defaults.set(self.loginView.username, forKey: "userLoggedIn")
+                    defaults.set(parts[1], forKey: "userPhoto")
                     DispatchQueue.main.async {
                         self.userLoggedIn.username = self.loginView.username
+                        self.userLoggedIn.setPhoto(urlPhoto: parts[1])
                     }
                 }
             }
@@ -165,8 +167,6 @@ struct LoginButton: View {
         let inputData = Data(loginView.password.utf8)
         let hashedDescription = SHA256.hash(data: inputData)
         let hashedPassword = hashedDescription.compactMap { String(format: "%02x", $0) }.joined()
-        
-        print("hashedPass: \(hashedPassword)")
         
         // Prepare URL
         let url = URL(string: "http://vieiraapp.000webhostapp.com/login.php")
@@ -192,9 +192,7 @@ struct LoginButton: View {
                 if let data = data, let dataString = String(data: data, encoding: .utf8) {
                     print("Response data string:\n \(dataString)")
                     
-                    if dataString == "Successfully logged in" {
-                        completion(dataString, error)
-                    }
+                    completion(dataString, error)
                 }
         }
         task.resume()

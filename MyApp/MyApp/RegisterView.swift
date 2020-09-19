@@ -213,7 +213,7 @@ struct RegisterForm: View {
                     .shadow(radius: 4)
                     .onTapGesture {
                         self.imagePicker.toggle()
-                }
+                    }
                 
                 Button(action: {
                     withAnimation() {

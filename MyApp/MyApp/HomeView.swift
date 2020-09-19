@@ -36,19 +36,19 @@ struct HomeViewAux: View {
             
             TabView {
                 
-                HomeScreenView()
+                HomeScreenView(userLoggedIn: userLoggedIn)
                     .tabItem {
                         Image(systemName: "house")
                         Text("Home")
                 }
                 
-                SearchView()
+                SearchView(userLoggedIn: userLoggedIn)
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Search")
                 }
                 
-                ProfileView(userLoggedIn: userLoggedIn)
+                OwnProfileView(userLoggedIn: userLoggedIn)
                     .tabItem {
                         Image(systemName: "person")
                         Text("Profile")
